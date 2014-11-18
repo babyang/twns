@@ -1,0 +1,439 @@
+<!doctype html>
+
+<html >
+<head>
+<meta charset="utf-8">
+<title>Megashop</title>
+
+<!--js-->
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/ddsmoothmenu.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.elastislide.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.accordion.js"></script>
+<script src="js/light_box.js"></script>
+<script type="text/javascript">$(document).ready(function(){$(".inline").colorbox({inline:true, width:"50%"});});</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/ddsmoothmenu.css"/>
+<link rel="stylesheet" href="css/elastislide.css"/>
+<link rel="stylesheet" href="css/home_flexslider.css"/>
+
+<link rel="stylesheet" href="css/light_box.css"/>
+<script src="js/html5.js"></script>
+</head>
+<body>
+	<div class="mainContainer sixteen container">
+            <!--Header Block-->
+            <div class="header-wrapper">
+              <header class="container">
+                <div class="head-right">
+                      <ul class="top-nav">
+                            <li class=""><a href="#" title="My Account">我的账户</a></li>
+                            <li class="my-wishlist"><a href="#" title="My Wishlist">我的收藏</a></li>
+                           
+                            
+                            <li class="log-in"><a href="#" title="Log In">登 陆</a></li>
+							<li class="checkout"><a href="#" title="Checkout">退出</a></li>
+                      </ul>
+                    <ul class="currencyBox">
+                        <li id="header_currancy" class="currency"> <a class="mainCurrency" href="#">查询</a>
+                          <div id="currancyBox" class="currency_detial"> <a href="#">待付款</a> <a href="#">待收货</a> <a href="#">待评价</a> </div>
+                        </li>
+                    </ul>
+                  <section class="header-bottom">
+                    <div class="cart-block">
+					<ul>
+						<li>(2)</li>
+						<li><a href="#" title="Cart"><img title="Item" alt="Item" src="images/item_icon.png" /></a></li>
+						<li>已购商品	</li>
+					</ul>
+					<div id="minicart" class="remain_cart" style="display: none;">
+						 <p class="empty">你已经购买了2件商品</p>
+						 <ol>
+						 	<li>
+								<div class="img-block"><img src="pics/fancy-disk.jpg" title="" alt="" /></div>
+								<div class="detail-block">
+									<h4><a href="#" title="">小清新光盘</a></h4>
+									<p>
+										<strong>1</strong> x ￥100.00
+									</p>
+									<a href="#" title="Details">详情</a>
+								</div>
+								<div class="edit-delete-block">
+									<a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+									<a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="img-block"><img src="pics/1TB-disk.jpg" title="" alt="" /></div>
+								<div class="detail-block">
+									<h4><a href="#" title="">1T 硬盘</a></h4>
+									<p>
+										<strong>1</strong> x ￥900.00
+									</p>
+									<a href="#" title="Details">详情</a>
+								</div>
+								<div class="edit-delete-block">
+									<a href="#" title="Edit"><img src="images/edit_icon.png" alt="Edit" title="Edit" /></a>
+									<a href="#" title="Remove"><img src="images/delete_item_btn.png" alt="Remove" title="Remove" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="total-block">合计:<span>￥1,000.00</span></div>
+								<a href="#" title="Checkout" class="colors-btn">去付款</a>
+								<div class="clear"></div>
+							</li>
+						 </ol>
+					</div>
+				</div>
+                    <div class="search-block">
+                      <input type="text" value="搜索商品" />
+                      <input type="submit" value="Search" title="Search" />
+                    </div>
+                  </section>
+                </div>
+                <h1 class="logo"><a href="#" title="Logo">
+                  <img title="Logo" alt="Logo" src="images/logo.png" />
+                  </a></h1>
+                <nav id="smoothmenu1" class="ddsmoothmenu mainMenu">
+                  <ul id="nav">
+                    <li class="active"><a href="#" title="Home">首页</a></li>
+                    <li class=""><a href="#" title="Shop by">类目</a>
+                      <ul>
+                        <li><a href="#">光盘</a></li>
+                        <li><a href="#">U盘</a></li>
+                   
+                        <li><a href="#">硬盘</a>
+                        	<ul>
+                                <li><a href="#">500G移动硬盘</a></li>
+                                <li><a href="#">1T移动硬盘</a></li>
+                                <li><a href="#">500G笔记本硬盘</a></li>
+                                <li><a href="#">1T笔记本硬盘</a></li>
+                               
+                              </ul>
+                        </li>
+                        
+                      </ul>
+                    </li>
+                   
+                  </ul>
+                </nav>
+                
+                <div class="mobMenu">
+           
+                
+              </header>
+            </div>
+            <!--Banner Block-->
+            <section class="banner-wrapper">
+              <div class="banner-block container">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li><img title="Banner" alt="Banner" src="pics/fancy-diskmini.jpg" /></li>
+                    <li><img title="Banner" alt="Banner" src="pics/marriage-diskmini.jpg" /></li>
+                    
+                    <li><img title="Banner" alt="Banner" src="pics/1TB-diskmini.jpg" /></li>
+                  </ul>
+                </div>
+                <ul class="banner-add">
+                  <li class="add1"><a href="#" title=""><img title="add1" alt="add1" src="pics/32GB-U-disk.jpg" /></a></li>
+                  <li class="add2"><a href="#" title=""><img title="add2" alt="add2" src="pics/pig-U-disk.jpg" /></a></li>
+                </ul>
+              </div>
+            </section>
+            <!--Content Block-->
+            <section class="content-wrapper">
+              <div class="content-container container">
+                <div class="heading-block">
+                  <h1>最新光盘</h1>
+                  <ul class="pagination">
+                    <li class="grid"><a href="" title="Grid">Grid</a></li>
+                  </ul>
+                </div>
+                <div class="feature-block">
+                  <ul id="mix" class="product-grid">
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/fancy-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">小清新光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">100.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/1TB-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">1T 大硬盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">600.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/marriage-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">婚庆光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">60.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/fancy-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                         <h4 class="pro-name">小清新光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">100.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/marriage-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">婚庆光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">60.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/1TB-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">1T 大硬盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">600.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/fancy-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                         <h4 class="pro-name">小清新光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">100.00元</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/marriage-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                       <h4 class="pro-name">婚庆光盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="#" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">60.00元</div>
+                      </div>
+                    </li>
+      				<li>
+                      <div class="pro-img"><img title="Freature Product" alt="Freature Product" src="pics/1TB-disk.jpg" /></div>
+                      <div class="pro-hover-block">
+                        <h4 class="pro-name">1T 大硬盘</h4>
+                        <div class="link-block"> 
+                        <a href="#" class="quickllook inline" title="Quick View">Quick View</a> 
+                        <a href="" class="quickproLink" title="Link">Product link</a></div>
+                        <div class="pro-price">600.00元</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="heading-block">
+                  <h1>时尚U盘</h1>
+                </div>
+                <div class="new-product-block">
+                  <ul class="product-grid">
+                    <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/32GB-U-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>32GB超大容量U盘 45元</p>
+                      </div>
+                      <div class="pro-price">45.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/mobile-phone-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>手机U盘</p>
+                      </div>
+                      <div class="pro-price">35.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/pig-U-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>Q版U盘</p>
+                      </div>
+                      <div class="pro-price">55.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                   <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/32GB-U-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>32GB超大容量U盘 45元</p>
+                      </div>
+                      <div class="pro-price">45.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                  </ul>
+				  <div class="heading-block">
+                  <h1>热卖硬盘</h1>
+                </div>
+                  <ul class="product-grid">
+                    <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/ssd-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>固态硬盘</p>
+                      </div>
+                      <div class="pro-price">645.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/small-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>笔记本硬盘</p>
+                      </div>
+                      <div class="pro-price">545.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                   <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/normal-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>台式机硬盘</p>
+                      </div>
+                      <div class="pro-price">345.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                   <li>
+                      <div class="pro-img">
+                        <img title="Freature Product" alt="Freature Product" src="pics/ssd-disk.jpg" />
+                      </div>
+                      <div class="pro-content">
+                        <p>固态 硬盘</p>
+                      </div>
+                      <div class="pro-price">845.00</div>
+                      <div class="pro-btn-block"> 
+                      <a class="add-cart left" href="#" title="Add to Cart">加入购物车</a> 
+                      <a class="add-cart right quickCart inline" href="#" title="Quick View">预览</a> </div>
+                      <div class="pro-link-block"> <a class="add-wishlist left" href="#" title="Add to wishlist">收藏</a> <a class="add-compare right" href="#" title="Add to Compare">比较</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+             
+              </div>
+            </section>
+    </div> 
+    <!--Quick view Block-->
+<script type="text/javascript">
+jQuery (function(){
+	var tabContainers=jQuery('div.tabs > div');
+	tabContainers.hide().filter(':first').show();
+	jQuery('div.tabs ul.tabNavigation a').click(function(){
+		tabContainers.hide();
+		tabContainers.filter(this.hash).show();
+		jQuery('div.tabs ul.tabNavigation a').removeClass('selected');
+		jQuery(this).addClass('selected');
+		return false;
+		}).filter(':first').click();
+	});
+</script>
+     
+            <!--Footer Block-->
+            <section class="footer-wrapper">
+              <footer class="container">
+                <div class="link-block">
+					
+                  <ul>
+                    <li class="link-title"><a href="#" title="Contact US">联系我们</a></li>
+                    <li>武汉市洪山区光谷世界城广场1616</li>
+					<li>Email：pandar_disk@gmail.com</li>
+					<li>TEL：15520552070</li>
+                  </ul>
+                  
+                 <ul style="float:right;width:30%;">
+				 
+					<p>我们的位置</p>
+					<img src="pics\position.png" alt="" />
+				
+				 </ul>
+				 
+                </div>
+                <div class="footer-bottom-block">
+                  <ul class="bottom-links">
+                    <li><a href="#" title="Home">主页</a></li>
+                    <li><a href="#" title="Pages">页面</a></li>
+                    <li><a href="#" title="About">关于我们</a></li>
+                    <li><a href="#" title="Contact">联系我们</a></li>
+                  </ul>
+                  <p class="copyright-block">© 2014 窦海洋</p>
+                </div>
+              </footer>
+            </section>
+</body>
+</html>
